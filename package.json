@@ -1,5 +1,5 @@
 {
-  "name": "project",
+  "name": "npa94",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -11,12 +11,8 @@
     "stats": "webpack --json > stats.json && webpack-bundle-analyzer stats.json"
   },
   "browserslist": "> 0.25%, not dead",
-  "keywords": [
-    "js",
-    "javascript",
-    "webpack"
-  ],
-  "author": "You're welcome! <brovkin.on@gmail.com>",
+  "keywords": [],
+  "author": "kalaganov5",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -51,7 +47,6 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.8.7",
-    "lodash": "^4.17.15",
     "normalize.css": "^8.0.1"
   }
 }
