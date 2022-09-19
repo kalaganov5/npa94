@@ -10,10 +10,18 @@
   <svg width="0" height="0" class="hidden">
   </svg>
   <header class="header">
-    <div class="container">
+    <div class="container header__container">
       <a href="/" class="header__logo logo">
         <img class="logo__image" src="./images/content/logo-npa94.svg" width="73" height="73" alt="Логотип npa94">
       </a>
+      <div class="header__hamburger hamburger">
+        <button class="hamburger__button" id="header-menu-toggle" type="button">
+          <span class="visually-hidden">Открыть/Закрыть меню</span>
+          <span class="hamburger__button--line"></span>
+          <span class="hamburger__button--line"></span>
+          <span class="hamburger__button--line"></span>
+        </button>
+      </div>
       <nav class="header__navidation navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
@@ -31,9 +39,6 @@
         </ul>
       </nav>
       <ul class="header__sub-nav additional-contact">
-        <li class="additional-contact__item">
-          <a href="#" class="additional-contact__link">Поиск</a>
-        </li>
         <li class="additional-contact__item">
           <a href="#" class="additional-contact__link button">Связаться</a>
         </li>

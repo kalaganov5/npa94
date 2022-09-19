@@ -2,10 +2,19 @@
  * Fonts
 */
 
+// @font-face {
+//   font-family: 'Source Sans Pro';
+//   src: local(''),
+//        url('../fonts/source-sans-pro-v21-latin_cyrillic-200.woff2') format('woff2'), /* Super Modern Browsers */
+//        url('../fonts/source-sans-pro-v21-latin_cyrillic-200.woff') format('woff'); /* Modern Browsers */
+//   font-style: normal;
+//   font-weight: 200;
+// }
+
 @font-face {
-  font-family: 'DINP-R';
-  src: url("../fonts/DINPro-Regular.eot?") format("eot"),
-  url("../fonts/DINPro-Regular.woff") format("woff"),
-  url("../fonts/DINPro-Regular.ttf") format("truetype");
+  font-family: 'Source Sans Pro';
+  src: url("../fonts/source-sans-pro-v21-latin_cyrillic-200.eot?") format("eot"),
+  url("../fonts/source-sans-pro-v21-latin_cyrillic-200.woff") format("woff"),
+  url("../fonts/source-sans-pro-v21-latin_cyrillic-200.ttf") format("truetype");
   font-style: normal;
 }

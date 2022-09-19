@@ -1,4 +1,6 @@
-/* By Athlon Front-End Team */
+
+/* Fonts */
+@import 'base/fonts';
 
 /* Core variables */
 @import 'base/vars';
@@ -7,10 +9,8 @@
 @import 'base/_normalize.css';
 
 /* CSS print */
-@import 'base/print';
-
-/* Fonts */
-@import 'base/fonts';
+// @import 'base/print';
+@import 'base/global.scss';
 
 /* Mixins, helpers and functions */
 @import 'base/mixins';
@@ -18,9 +18,16 @@
 /* Vendor */
 
 /* Components */
+@import 'body.scss';
+@import 'hidden.scss';
+@import 'header';
+@import 'logo.scss';
+@import 'hamburger.scss';
+@import 'navigation.scss';
+@import 'additional-contact.scss';
 
 /* Browser specific styles */
 @import 'dirty/hacks';
 
 /* Demo Page styles */
-@import 'demo';
+// @import 'demo';
