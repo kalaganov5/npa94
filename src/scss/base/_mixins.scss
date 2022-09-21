@@ -1,13 +1,15 @@
-/**
- * Helper mixins
-*/
-
 // Media queries
 @mixin bp($point) {
-  @if $point == large {
-    @media (min-width: 1280px) { @content; }
-  } @else if $point == small {
-    @media (max-width: 1279px) { @content; }
+  @if $point==large {
+    @media (min-width: 1280px) {
+      @content;
+    }
+  }
+
+  @else if $point==small {
+    @media (max-width: 1279px) {
+      @content;
+    }
   }
 }
 
@@ -15,13 +17,45 @@
 //Usage:
 //@include placeholder;
 @mixin placeholder {
+
   // sass-lint:disable no-vendor-prefixes
-  ::-webkit-input-placeholder {@content}
-  :-moz-placeholder           {@content}
-  ::-moz-placeholder          {@content}
-  :-ms-input-placeholder      {@content}
+  ::-webkit-input-placeholder {
+    @content
+  }
+
+  :-moz-placeholder {
+    @content
+  }
+
+  ::-moz-placeholder {
+    @content
+  }
+
+  :-ms-input-placeholder {
+    @content
+  }
 }
 
 @mixin outline {
   outline: 1px solid red;
+}
+
+@mixin transition($delay: 200ms, $property: all) {
+  transition: $property $delay linear;
+}
+
+@mixin font-value($minimum-font-size: 16,
+  $maximum-font-size: 20,
+  $minimum-line-height: $minimum-font-size * 1.15,
+  $maximum-line-height: $maximum-font-size * 1.15) {
+  // source: https://levelup.gitconnected.com/css-responsive-fluid-typography-a23a9aab19a#a8bb
+  font-size: calc(#{$minimum-font-size}px + (#{$maximum-font-size} - #{$minimum-font-size}) * (100vw - 320px) / (1150 - 320));
+  // source: https://levelup.gitconnected.com/css-responsive-fluid-typography-a23a9aab19a#a8bb
+  line-height: calc(#{$minimum-line-height}px + (#{$maximum-line-height} - #{$minimum-line-height}) * (100vw - 320px) / (1150 - 320));
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

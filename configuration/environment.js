@@ -4,13 +4,11 @@ module.exports = {
   paths: {
     /* Path to source files directory */
     source: path.resolve(__dirname, '../src/'),
-
     /* Path to built files directory */
     output: path.resolve(__dirname, '../dist/'),
   },
   server: {
     port: 3000,
-    host: '0.0.0.0'
   },
   limits: {
     /* Image files size in bytes. Below this value the image file will be served as DataURL (inline base64). */

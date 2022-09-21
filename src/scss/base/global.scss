@@ -1,26 +1,43 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .visually-hidden {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .container {
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    max-width: $desktop;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: $desktop;
+}
+
+.button {
+  text-decoration: none;
+  font-weight: 600;
+  color: $color-white;
+  background-color: $color-banker;
+  border-radius: 10px;
+  padding: 12px 20px;
+  display: inline-block;
+  box-shadow: 14px 14px 36px rgba(85, 85, 85, 0.1);
+  @include transition;
+
+  &:hover,
+  &:active {
+    background-color: $color-dark-gray;
+  }
 }

@@ -1,7 +1,30 @@
 .logo {
-    @include outline;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: $color-banker;
+  @include font-value(18, 24);
+  font-weight: 300;
+
+  &:hover,
+  &:active {
+    text-decoration: underline;
+    text-decoration-color: rgba($color-banker, 0.3);
+  }
 }
 
 .logo__image {
-    display: block;
+  display: block;
+}
+
+.logo__text {
+  text-transform: none;
+}
+
+@media (min-width: $desktop) {
+  .logo {
+    font-size: 24px;
+    line-height: 26px;
+  }
 }

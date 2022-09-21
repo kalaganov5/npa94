@@ -1,3 +1,56 @@
 .additional-contact {
-    display: none;
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: flex-end;
+}
+
+.additional-contact__link {
+  @include font-value(16, 20);
+  color: $color-banker;
+  text-decoration: transparent;
+  font-weight: 600;
+  position: relative;
+  @include transition(200ms, text-decoration-color);
+  cursor: pointer;
+
+  &:not(.button) {
+    background-color: unset;
+    border: none;
+    padding: 0;
+  }
+
+  &--active {
+    &::before {
+      content: '';
+      position: absolute;
+      width: 4.5px;
+      height: 4.5px;
+      background-color: $color-black;
+      border-radius: 50%;
+      top: 0;
+      left: -5px;
+    }
+  }
+
+  &:hover,
+  &:active {
+    text-decoration: underline;
+    text-decoration-color: rgba($color-banker, 0.3);
+  }
+
+  &.button {
+    color: $color-white;
+  }
+}
+
+@media (min-width: $desktop) {
+  .additional-contact {
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    gap: 15px 45px;
+    flex-wrap: wrap;
+  }
 }

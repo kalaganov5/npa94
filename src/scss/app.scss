@@ -1,6 +1,9 @@
 
+
 /* Fonts */
 @import 'base/fonts';
+
+@import 'base/_mixins.scss';
 
 /* Core variables */
 @import 'base/vars';
@@ -8,18 +11,17 @@
 /* CSS Normalize */
 @import 'base/_normalize.css';
 
+/* Mixins, helpers and functions */
+
+
 /* CSS print */
 // @import 'base/print';
 @import 'base/global.scss';
-
-/* Mixins, helpers and functions */
-@import 'base/mixins';
 
 /* Vendor */
 
 /* Components */
 @import 'body.scss';
-@import 'hidden.scss';
 @import 'header';
 @import 'logo.scss';
 @import 'hamburger.scss';
@@ -28,6 +30,3 @@
 
 /* Browser specific styles */
 @import 'dirty/hacks';
-
-/* Demo Page styles */
-// @import 'demo';

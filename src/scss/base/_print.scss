@@ -1,13 +1,9 @@
-/**
- * Print Stylesheet
-*/
-
 @media print {
   @page { margin: 1cm; }
 
   body {
-    background: $white;
-    color: $black;
+    background: $black;
+    color: $white;
   }
 
   a {
