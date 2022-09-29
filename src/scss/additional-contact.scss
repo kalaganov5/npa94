@@ -19,6 +19,11 @@
     background-color: unset;
     border: none;
     padding: 0;
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
   }
 
   &--active {
@@ -36,7 +41,6 @@
 
   &:hover,
   &:active {
-    text-decoration: underline;
     text-decoration-color: rgba($color-banker, 0.3);
   }
 
