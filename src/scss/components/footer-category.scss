@@ -1,0 +1,30 @@
+.footer-category {
+  @include reset-list;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-category__link {
+  background-color: $color-dark-gray;
+  box-shadow: 14px 14px 36px $color-matterhorn-light;
+  @include transition(200ms, background-color);
+  color: $color-gainsboro;
+
+  &:hover,
+  &:focus {
+    background-color: $base-black;
+  }
+}
+
+@media (min-width: $tablet) {
+  .footer-category {
+    gap: 15px;
+  }
+
+  .footer-category__link {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

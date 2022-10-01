@@ -27,6 +27,11 @@
 @import 'hamburger.scss';
 @import 'navigation.scss';
 @import 'additional-contact.scss';
+@import './components/footer-menu.scss';
+@import './components/footer.scss';
+@import './components/footer-category.scss';
+@import './components/social.scss';
+
 
 /* Browser specific styles */
 @import 'dirty/hacks';

@@ -1,0 +1,61 @@
+.social {
+  @include reset-list;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+
+  &--chrome {
+    .social__link {
+      fill: $color-black;
+      background: $color-white;
+
+      &:hover,
+      &:focus {
+        fill: $color-white;
+
+        &.social__link--instagram {
+          background: $social-instagram;
+        }
+
+        &.social__link--telegram {
+          background-color: $social-telegram;
+        }
+
+        &.social__link--vk {
+          background-color: $social-vk;
+        }
+      }
+    }
+  }
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  fill: $color-white;
+  @include transition;
+
+  &--instagram {
+    background: $social-instagram;
+  }
+
+  &--telegram {
+    background-color: $social-telegram;
+  }
+
+  &--vk {
+    background-color: $social-vk;
+  }
+}
+
+@media (min-width: $tablet) {
+  .social {
+    margin-bottom: 0;
+  }
+}
