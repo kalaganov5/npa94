@@ -23,6 +23,10 @@
   padding-left: 20px;
   padding-right: 20px;
   max-width: $desktop;
+
+  &--small {
+    max-width: $width-small;
+  }
 }
 
 .button {
