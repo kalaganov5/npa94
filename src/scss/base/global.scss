@@ -41,3 +41,16 @@
     background-color: $color-dark-gray;
   }
 }
+
+.title {
+  color: $color-black;
+  @include font-value(27, 48);
+  font-weight: 700;
+}
+
+@media (min-width: $desktop) {
+  .title {
+    font-size: 48px;
+    line-height: 1.3;
+  }
+}

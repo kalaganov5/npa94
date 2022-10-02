@@ -1,0 +1,42 @@
+.tooltip {
+  position: relative;
+  cursor: help;
+
+  &::after {
+    content: '⚠';
+  }
+
+  &--update::after {
+    content: '↻';
+  }
+
+  &--arrow-top::after {
+    content: '△';
+  }
+
+  &:hover,
+  &:focus {
+    & .tooltip__body {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+}
+
+.tooltip__body {
+  @include transition(500ms, opacity);
+  opacity: 0;
+  visibility: hidden;
+  max-width: 300px;
+  width: 100%;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $color-dark-gray;
+  color: $color-white;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 1;
+}

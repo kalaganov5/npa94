@@ -3,8 +3,6 @@
 /* Fonts */
 @import 'base/fonts';
 
-@import 'base/_mixins.scss';
-
 /* Core variables */
 @import 'base/vars';
 
@@ -12,13 +10,10 @@
 @import 'base/_normalize.css';
 
 /* Mixins, helpers and functions */
+@import 'base/_mixins.scss';
 
-
-/* CSS print */
-// @import 'base/print';
+/* CSS global */
 @import 'base/global.scss';
-
-/* Vendor */
 
 /* Components */
 @import 'body.scss';
@@ -27,6 +22,12 @@
 @import 'hamburger.scss';
 @import 'navigation.scss';
 @import 'additional-contact.scss';
+@import 'rank-math-breadcrumb.scss';
+@import 'post-meta.scss';
+@import 'tooltip.scss';
+@import 'main.scss';
+@import 'single-post.scss';
+@import 'featured-image.scss';
 
 /* Browser specific styles */
 @import 'dirty/hacks';

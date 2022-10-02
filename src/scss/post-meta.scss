@@ -1,0 +1,14 @@
+.post-meta {
+  @include reset-list;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-nobel;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 20px;
+}

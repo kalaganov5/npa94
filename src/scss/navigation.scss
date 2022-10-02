@@ -12,10 +12,12 @@
   row-gap: 25px;
   flex-direction: column;
   box-shadow: 14px 14px 36px $color-matterhorn-light;
+  z-index: 10;
 
   &--show {
     visibility: visible;
     opacity: 1;
+
   }
 }
 
