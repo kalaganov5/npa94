@@ -1,0 +1,11 @@
+.featured-image {
+  background: linear-gradient(to bottom, $color-seashell 60%, $color-white 60%, $color-white 100%);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.featured-image__body {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}

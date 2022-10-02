@@ -1,0 +1,43 @@
+.rank-math-breadcrumb {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-nobel;
+
+  & > p {
+    margin: 0;
+  }
+
+  & a {
+    color: inherit;
+    @include transition;
+    text-decoration-color: rgba($color-nobel, 0);
+
+    &:hover,
+    &:focus {
+      text-decoration-color: rgba($color-nobel, 1);
+    }
+
+    &:last-of-type {
+      text-decoration: none;
+      color: $color-banker;
+      background-color: $color-peach;
+      border-radius: 10px;
+      padding: 12px 20px;
+      display: inline-block;
+      box-shadow: 14px 14px 36px rgba(85, 85, 85, 0.1);
+      @include transition;
+
+      &:hover,
+      &:active {
+        background-color: rgba($color-peach, 0.7);
+      }
+    }
+  }
+
+  & .separator {
+    &:last-of-type {
+      opacity: 0.5;
+    }
+  }
+}

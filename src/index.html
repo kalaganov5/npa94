@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,8 @@
   <link rel='canonical' href='/'>
   <meta name="description" content="Описание сайта">
 </head>
-<body class="body single-post">
+
+<body class="body">
   <svg width="0" height="0" class="hidden">
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" id="icon-tg">
       <path d="M19 0.602225L15.9946 16.2923C15.9946 16.2923 15.5741 17.3801 14.4189 16.8584L7.48458 11.3526L7.45242 11.3364C8.38909 10.4654 15.6524 3.70266 15.9698 3.39612C16.4613 2.92136 16.1562 2.63873 15.5856 2.99736L4.85679 10.053L0.717638 8.61077C0.717638 8.61077 0.0662573 8.37083 0.00359284 7.84911C-0.0598962 7.32653 0.739076 7.0439 0.739076 7.0439L17.6131 0.188948C17.6131 0.188948 19 -0.44207 19 0.602225Z"></path>
@@ -26,6 +28,7 @@
     <div class="container header__container">
       <a href="/" class="header__logo logo">
         <img class="logo__image" src="./images/content/logo-npa94.svg" width="73" height="73" alt="Логотип npa94">
+        NPA94.com
       </a>
       <div class="header__hamburger hamburger">
         <button class="hamburger__button hamburger-element" id="header-menu-toggle" type="button">
@@ -61,42 +64,70 @@
       </nav>
     </div>
   </header>
-  <main class="main post">
-    <section class="single-post__header">
-      <div class="container">
-        <ul class="single-post__meta post-meta">
-          <li class="post-meta__item">
-            <ul class="post-meta__body post-meta__body--breadcrumb breadcrumb">
-              <li class="breadcrumb__item">
-                <a href="#" class="breadcrumb__link">Главная</a>
-              </li>
-              <li class="breadcrumb__item">
-                <a href="#" class="breadcrumb__link">Блог</a>
-              </li>
-              <li class="breadcrumb__item">
-                <a href="#" class="breadcrumb__link breadcrumb__link--category">Кейсы</a>
-              </li>
-            </ul>
-          </li>
-          <li class="post-meta__item">
-            <time class="post-meta__body post-meta__body--time" datetime="2022-02-14 20:00">Февраль 2022</time>
-          </li>
-          <li class="post-meta__item">
-            <div class="post-meta__body post-meta__body--stats">
-              <span class="visually-hidden">Просмотров </span>138 478
-            </div>
-          </li>
-        </ul>
-        <h1 class="single-post__headline title">
-          Ведение соцсетей по нише "Дизайн и ремонт квартир"
-        </h1>
-      </div>
-      <div class="single-post__featured-image featured-image">
-        <div class="featured-image__container container">
-          <img class="featured-image__content" width="1110" height="464" src="images/content/featured-image.jpg" alt="Описание главного изображения">
+  <main class="main">
+    <article class="single-post">
+      <header class="single-post__header">
+        <div class="container">
+          <ul class="single-post__meta post-meta">
+            <li class="post-meta__item">
+              <nav aria-label="breadcrumbs" class="rank-math-breadcrumb">
+                <p><a href="http://wp.test">Home</a><span class="separator"> • </span><a href="http://wp.test/blog/">a
+                    Blog
+                    page</a><span class="separator"> • </span><a
+                    href="http://wp.test/topics/%d0%ba%d0%b5%d0%b9%d1%81%d1%8b/">Кейсы</a></p>
+              </nav>
+            </li>
+            <li class="post-meta__item">
+              <div class="post-meta__body post-meta__body--time tooltip tooltip--update post-meta__body--tooltip" tabindex="0">
+                <span class="visually-hidden">Опубликовано: </span><time class="post-meta__body post-meta__body--time" datetime="2022-10-02T10:34:25+03:00">Февраль
+                  2022</time>
+                <span class="post-meta__tooltip tooltip__body">
+                  Обновлено:
+                  <time class="post-meta__body post-meta__body--time" datetime="2022-10-02T10:34:25+03:00">Октябрь 2022</time>
+                </span>
+              </div>
+            </li>
+            <li class="post-meta__item">
+              <div class="post-meta__body post-meta__body--stats">
+                Просмотров: 138 478
+              </div>
+            </li>
+          </ul>
+          <h1 class="single-post__headline title">
+            Ведение соцсетей по нише Ведение соцсетей пGаaAAАао н"Дизайн и ремонт квартир"
+          </h1>
         </div>
-      </div>
-    </section>
+        <div class="single-post__featured-image featured-image">
+          <div class="featured-image__container container">
+            <img class="featured-image__body" width="1100" height="500" src="images/content/featured-image.jpg"
+              alt="Описание главного изображения">
+          </div>
+        </div>
+      </header>
+
+
+    </article>
+
+    // example
+    <article id="post-1860"
+      class="post-1860 post type-post status-publish format-standard has-post-thumbnail hentry category-200 tag-content-2 tag-markup-2 tag-post-formats">
+
+
+      <!-- <div class="post-thumbnail">
+        <img width="1111" height="464" src="http://wp.test/wp-content/uploads/2022/10/featured-image.jpg"
+          class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
+          srcset="http://wp.test/wp-content/uploads/2022/10/featured-image.jpg 1111w, http://wp.test/wp-content/uploads/2022/10/featured-image-300x125.jpg 300w, http://wp.test/wp-content/uploads/2022/10/featured-image-1024x428.jpg 1024w, http://wp.test/wp-content/uploads/2022/10/featured-image-768x321.jpg 768w"
+          sizes="(max-width: 1111px) 100vw, 1111px" />
+      </div> -->
+
+      <footer class="entry-footer">
+        <span class="cat-links">Posted in <a href="http://wp.test/category/%d0%ba%d0%b5%d0%b9%d1%81%d1%8b/"
+            rel="category tag">Кейсы</a></span><span class="tags-links">Tagged <a href="http://wp.test/tag/content-2/"
+            rel="tag">content περιεχόμενο</a>, <a href="http://wp.test/tag/markup-2/" rel="tag">markup</a>, <a
+            href="http://wp.test/tag/post-formats/" rel="tag">Post Formats</a></span>
+      </footer>
+    </article>
+    // example
   </main>
   <footer class="footer">
     <div class="footer__container container">
@@ -193,4 +224,5 @@
     </div>
   </footer>
 </body>
+
 </html>
