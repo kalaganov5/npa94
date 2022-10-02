@@ -9,10 +9,11 @@
 .additional-contact__link {
   @include font-value(16, 20);
   color: $color-banker;
-  text-decoration: transparent;
+  text-decoration: underline;
+  text-decoration-color: transparent;
   font-weight: 600;
   position: relative;
-  @include transition(200ms, text-decoration-color);
+  @include transition;
   cursor: pointer;
 
   &:not(.button) {
@@ -23,6 +24,7 @@
     &:hover,
     &:active {
       text-decoration: underline;
+      text-decoration-color: rgba($color-banker, 0.3);
     }
   }
 
@@ -39,13 +41,9 @@
     }
   }
 
-  &:hover,
-  &:active {
-    text-decoration-color: rgba($color-banker, 0.3);
-  }
-
   &.button {
     color: $color-white;
+    text-decoration: none;
   }
 }
 
@@ -56,5 +54,10 @@
     align-content: center;
     gap: 15px 45px;
     flex-wrap: wrap;
+  }
+
+  .additional-contact__link {
+    font-size: 20px;
+    line-height: 24px;
   }
 }

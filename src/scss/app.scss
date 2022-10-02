@@ -28,6 +28,10 @@
 @import 'main.scss';
 @import 'single-post.scss';
 @import 'featured-image.scss';
+@import './components/footer-menu.scss';
+@import './components/footer.scss';
+@import './components/footer-category.scss';
+@import './components/social.scss';
 
 /* Browser specific styles */
 @import 'dirty/hacks';

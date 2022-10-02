@@ -31,7 +31,7 @@
 
 .navigation__link {
   color: $color-banker;
-  text-decoration: transparent;
+  text-decoration-color: transparent;
   font-weight: 600;
   @include font-value(16, 20);
   position: relative;
@@ -52,7 +52,6 @@
 
   &:hover,
   &:active {
-    text-decoration: underline;
     text-decoration-color: rgba($color-banker, .3);
   }
 }
@@ -76,5 +75,10 @@
     gap: 15px 45px;
     align-content: center;
     min-width: 55%;
+  }
+
+  .navigation__link {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
