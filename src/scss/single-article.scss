@@ -20,3 +20,7 @@
 .single-article__headline {
   margin: 0;
 }
+
+.single-article .container > *:first-child {
+  margin-top: 0;
+}
