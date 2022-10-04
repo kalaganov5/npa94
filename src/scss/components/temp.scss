@@ -1,0 +1,5 @@
+.single-article .alignwide {
+  margin-left: calc(($width-small - $desktop) / 2);
+  width: $desktop - 40px;
+  max-width: $desktop - 40px;
+}

@@ -1,16 +1,11 @@
 .single-article {
-  padding-top: 50px;
   padding-bottom: 50px;
 }
 
 .single-article__header {
-  background-color: $color-seashell;
-  margin-top: -50px;
   padding-top: 50px;
-
-  & .container {
-    padding-bottom: 50px;
-  }
+  margin-bottom: 40px;
+  background-color: $color-seashell;
 }
 
 .single-article__meta {
@@ -18,9 +13,6 @@
 }
 
 .single-article__headline {
-  margin: 0;
+  padding-bottom: 40px;
 }
 
-.single-article .container > *:first-child {
-  margin-top: 0;
-}
