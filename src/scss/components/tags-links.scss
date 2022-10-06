@@ -1,0 +1,38 @@
+.tags-links__list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.tags-links .tags-links__item {
+  list-style-type: none;
+}
+
+.tags-links__item {
+  & a {
+    text-decoration: none;
+    font-weight: 600;
+    color: $color-banker;
+    background-color: $color-seashell;
+    border-radius: 10px;
+    border: 1px solid $color-serenade;
+    padding: 12px 20px;
+    display: inline-block;
+    box-shadow: 14px 14px 36px rgba(85, 85, 85, 0.1);
+    @include transition;
+    word-break: break-word;
+
+    &::before {
+      content: '#';
+      margin-right: 2px;
+      font-size: 0.8em;
+      color: $color-nobel;
+    }
+
+    &:hover,
+    &:active {
+      background-color: $color-peach;
+    }
+  }
+}

@@ -60,10 +60,17 @@ cite {
 figure.wp-block-jetpack-image-compare figcaption,
 .wp-block-image figcaption,
 .wp-block-audio figcaption,
-.wp-block-video figcaption {
+.wp-block-video figcaption,
+.wp-block-table figcaption {
   font-size: 1rem;
   margin-top: 5px;
   margin-bottom: 1em;
+}
+
+.wp-block-pullquote__citation,
+.wp-block-pullquote cite,
+.wp-block-pullquote footer {
+  text-transform: unset;
 }
 
 .wp-block-audio audio {

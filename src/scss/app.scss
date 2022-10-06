@@ -24,6 +24,7 @@
 @import 'additional-contact.scss';
 @import 'rank-math-breadcrumb.scss';
 @import 'post-meta.scss';
+@import './components/wp-buttons.scss';
 @import 'tooltip.scss';
 @import 'main.scss';
 @import 'single-article.scss';
@@ -32,6 +33,7 @@
 @import './components/footer.scss';
 @import './components/footer-category.scss';
 @import './components/social.scss';
+@import './components/tags-links.scss';
 
 /* Browser specific styles */
 @import 'dirty/hacks';
