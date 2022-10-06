@@ -33,6 +33,7 @@
     &:hover,
     &:active {
       background-color: $color-peach;
+      color: inherit;
     }
   }
 }

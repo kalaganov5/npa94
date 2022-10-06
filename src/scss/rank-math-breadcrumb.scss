@@ -16,6 +16,7 @@
     &:hover,
     &:focus {
       text-decoration-color: rgba($color-nobel, 1);
+      color: inherit;
     }
 
     &:last-of-type {
@@ -31,6 +32,7 @@
       &:hover,
       &:active {
         background-color: rgba($color-peach, 0.7);
+        color: inherit;
       }
     }
   }
