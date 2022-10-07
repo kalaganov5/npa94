@@ -1,0 +1,5 @@
+.comments-area {
+  width: min(calc(100% - 40px), calc($width-small - 40px));
+  margin-left: auto;
+  margin-right: auto;
+}

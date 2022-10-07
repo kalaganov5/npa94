@@ -238,11 +238,11 @@ div.jetpack-testimonial-shortcode {
 
 .single-article__footer {
   margin-top: 30px;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding-top: 50px;
   display: grid;
   grid-template-columns: minmax(20px, auto) 1fr minmax(20px, auto);
   position: relative;
+  row-gap: 40px;
 
   &::before {
     content: '';
@@ -270,8 +270,10 @@ div.jetpack-testimonial-shortcode {
 
 .single-article__share {
   grid-column: 2 / 2;
-  margin-top: 30px;
-  justify-self: center;
+}
+
+.single-article__author {
+  grid-column: 2 / 2;
 }
 
 @media (min-width: $tablet) {
@@ -290,6 +292,10 @@ div.jetpack-testimonial-shortcode {
     grid-column: 3 / 4;
     margin-top: 0;
     justify-self: end;
+  }
+
+  .single-article__author {
+    grid-column: 2 / -2;
   }
 
   .single-article__content {
