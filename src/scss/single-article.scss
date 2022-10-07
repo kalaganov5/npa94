@@ -240,10 +240,21 @@ div.jetpack-testimonial-shortcode {
   margin-top: 30px;
   padding-top: 30px;
   padding-bottom: 50px;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
   display: grid;
   grid-template-columns: minmax(20px, auto) 1fr minmax(20px, auto);
+  position: relative;
 
+  &::before {
+    content: '';
+    height: 1px;
+    width: min(calc(100% - 40px), calc($width-small - 40px));
+    position: absolute;
+    background-color: rgba($color-black, 0.08);
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
 }
 
 .edit-link {
@@ -266,7 +277,7 @@ div.jetpack-testimonial-shortcode {
 @media (min-width: $tablet) {
   .single-article__footer {
     display: grid;
-    grid-template-columns: minmax(20px, auto) 1fr 300px minmax(20px, auto);
+    grid-template-columns: minmax(20px, auto) minmax(auto, 480px) 300px minmax(20px, auto);
     justify-content: center;
     align-items: start;
   }
@@ -310,9 +321,5 @@ div.jetpack-testimonial-shortcode {
       padding-left: 0;
       padding-right: 0;
     }
-  }
-
-  .single-article__footer {
-    grid-template-columns: minmax(20px, auto) 480px 300px minmax(20px, auto);
   }
 }
