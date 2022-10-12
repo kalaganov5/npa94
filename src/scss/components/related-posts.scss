@@ -1,0 +1,130 @@
+.related-post {
+  padding-bottom: 50px;
+}
+
+.related-post__inner {
+  display: grid;
+  row-gap: 20px;
+  padding-bottom: 50px;
+}
+
+.related-post__item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+  & img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0 4px 16px, rgba(17, 17, 26, 0.1) 0 8px 24px, rgba(17, 17, 26, 0.1) 0 16px 56px;
+  }
+}
+
+.related-post__category {
+  display: none;
+}
+
+.related-post__headline {
+  margin-bottom: 30px;
+  max-width: calc($width-small - 40px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.related-post__title {
+  & a {
+    font-weight: 700;
+    font-size: 1.125rem;
+    text-decoration-color: transparent;
+    color: $color-banker;
+    @include transition;
+    min-height: 100px;
+    word-break: break-word;
+
+    &:hover,
+    &:focus {
+      text-decoration-color: rgba($color-banker, 0.5);
+    }
+  }
+}
+
+@media (min-width: 500px) {
+
+  .related-post {
+    background: linear-gradient(to top, #FFF5EF 50%, #fff 50%, #fff 100%);
+  }
+
+  .related-post__inner {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  .related-post__item {
+    background-color: $color-white;
+    box-shadow: rgba(17, 17, 26, 0.1) 0 4px 16px, rgba(17, 17, 26, 0.1) 0 8px 24px, rgba(17, 17, 26, 0.1) 0 16px 56px;
+    grid-template-columns: 1fr;
+    border-radius: 10px;
+    gap: 0;
+    grid-template-rows: min-content;
+
+    &:nth-child(3n) {
+      grid-column: 1 / -1;
+    }
+  }
+
+  .related-post__thumbnail {
+    height: fit-content;
+
+    & img {
+      border-radius: 0;
+      border-top-left-radius: 10px 10px;
+      border-top-right-radius: 10px 10px;
+      box-shadow: none;
+    }
+  }
+
+  .related-post__title {
+    padding: 20px;
+
+    & a {
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .related-post__inner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .related-post__item {
+    &:nth-child(3n) {
+      grid-column: auto;
+    }
+  }
+
+  .related-post__thumbnail-link {
+    position: relative;
+  }
+
+  .related-post__category {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    width: max-content;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: $color-dark-cyan;
+    border-radius: 10px;
+    color: $color-white;
+    box-shadow: 14px 14px 36px rgba(85, 85, 85, 0.1);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
