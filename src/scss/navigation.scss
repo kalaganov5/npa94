@@ -53,6 +53,7 @@
   &:hover,
   &:active {
     text-decoration-color: rgba($color-banker, .3);
+    color: inherit;
   }
 }
 

@@ -1,0 +1,142 @@
+.comments-area {
+  width: min(calc(100% - 40px), calc($width-small - 40px));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.comment-author {
+  // display: flex;
+  // align-items: center;
+
+  & .fn {}
+}
+
+.comments-title {}
+
+.comment-list {
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.comment {}
+
+.comment-body {}
+
+.comment-metadata {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-nobel;
+}
+
+.comment-form {
+
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="password"],
+  input[type="search"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="range"],
+  input[type="date"],
+  input[type="month"],
+  input[type="week"],
+  input[type="time"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="color"],
+  textarea {
+    background-color: $color-white-smoke;
+    border-radius: 10px;
+    min-height: 60px;
+    padding: 15px 20px;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  & .comment-form-cookies-consent {
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-nobel;
+  }
+
+  & textarea {
+    margin-top: 10px;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 25px 20px;
+    height: 80px;
+  }
+
+  & .required {
+    color: $color-red;
+  }
+
+  & .submit {
+    text-decoration: none;
+    font-weight: 600;
+    color: $color-white;
+    background-color: $color-banker;
+    border-radius: 10px;
+    padding: 12px 20px;
+    display: inline-block;
+    box-shadow: 14px 14px 36px rgba(85, 85, 85, 0.1);
+    @include transition;
+    word-break: break-word;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+      background-color: $color-dark-gray;
+    }
+  }
+
+  & .comment-notes {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+
+}
+
+@media (min-width: $tablet) {
+  .comment-form {
+    margin-bottom: 50px;
+
+    & p {
+      margin: 0;
+    }
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    .comment-form-comment {
+      grid-column: 1/-1;
+    }
+
+    .comment-form-cookies-consent {
+      grid-column: 1/-1;
+      margin-top: 0;
+      order: 1;
+    }
+
+    .form-submit {
+      grid-column: 1/-1;
+    }
+
+    & .submit {
+      min-height: 60px;
+    }
+  }
+
+}
