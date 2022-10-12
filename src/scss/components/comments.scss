@@ -2,16 +2,8 @@
   width: min(calc(100% - 40px), calc($width-small - 40px));
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
 }
-
-.comment-author {
-  // display: flex;
-  // align-items: center;
-
-  & .fn {}
-}
-
-.comments-title {}
 
 .comment-list {
   margin-left: 0;
@@ -20,9 +12,9 @@
   gap: 30px;
 }
 
-.comment {}
-
-.comment-body {}
+.comment-body {
+  margin-bottom: 20px;
+}
 
 .comment-metadata {
   font-weight: 400;
@@ -104,8 +96,6 @@
     white-space: nowrap;
     width: 1px;
   }
-
-
 }
 
 @media (min-width: $tablet) {
