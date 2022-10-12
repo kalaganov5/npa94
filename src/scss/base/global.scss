@@ -47,10 +47,45 @@
   }
 }
 
+cite,
+blockquote,
+q {
+  font-style: normal;
+}
+
+cite {
+  color: $color-dark-gray;
+}
+
+figure.wp-block-jetpack-image-compare figcaption,
+.wp-block-image figcaption,
+.wp-block-audio figcaption,
+.wp-block-video figcaption,
+.wp-block-table figcaption {
+  font-size: 1rem;
+  margin-top: 5px;
+  margin-bottom: 1em;
+}
+
+.wp-block-pullquote__citation,
+.wp-block-pullquote cite,
+.wp-block-pullquote footer {
+  text-transform: unset;
+}
+
+.wp-block-audio audio {
+  min-width: unset;
+}
+
+figcaption {
+  color: $color-dark-gray;
+}
+
 .title {
   color: $color-black;
   @include font-value(27, 48);
   font-weight: 700;
+  word-wrap: break-word;
 }
 
 @media (min-width: $desktop) {

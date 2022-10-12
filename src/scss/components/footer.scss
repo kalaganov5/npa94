@@ -36,6 +36,7 @@
   &:focus,
   &:hover {
     text-decoration-color: rgba($color-white-smoke, 0.5);
+    color: inherit;
   }
 }
 
