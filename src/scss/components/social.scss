@@ -26,6 +26,14 @@
         &.social__link--vk {
           background-color: $social-vk;
         }
+
+        &.social__link--facebook {
+          background-color: $social-facebook;
+        }
+
+        &.social__link--twitter {
+          background-color: $social-twitter;
+        }
       }
     }
   }
