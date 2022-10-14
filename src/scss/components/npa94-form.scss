@@ -16,6 +16,11 @@
     width: 100%;
   }
 
+  & .wpcf7-form-control-wrap {
+    position: relative;
+    display: block;
+  }
+
   & textarea {
     width: 100%;
     min-width: 100%;
@@ -39,11 +44,27 @@
       @include transition;
       color: $color-banker;
 
+      &.wpcf7-not-valid {
+        border-color: $color-red;
+      }
+
       &:focus {
         border: 1px solid $color-peach;
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
       }
     }
+
+
+  }
+
+  & .wpcf7-not-valid-tip {
+    color: $color-red;
+    font-size: 0.875rem;
+    position: absolute;
+    width: max-content;
+    max-width: 100%;
+    bottom: -1.125rem;
+    left: 0;
   }
 
   & input[type="submit"] {
