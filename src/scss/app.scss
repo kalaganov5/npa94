@@ -16,6 +16,7 @@
 @import 'base/global.scss';
 
 /* Components */
+@import 'html.scss';
 @import 'body.scss';
 @import 'header';
 @import 'logo.scss';
@@ -41,6 +42,7 @@
 @import './components/npa94-form.scss';
 @import './form-global.scss';
 @import './components/wpcf7.scss';
+@import './components/author-page.scss';
 
 /* Browser specific styles */
 @import 'dirty/hacks';

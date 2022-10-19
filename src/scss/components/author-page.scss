@@ -1,0 +1,96 @@
+.author-page {}
+
+.author-page__author {
+  display: grid;
+  justify-items: flex-start;
+}
+
+.author-page__socials {
+  order: 1;
+  margin-bottom: 15px;
+}
+
+
+.author-page__title {
+  color: $color-banker;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.author-page__image-body {
+  max-width: calc(100% - 10px);
+  height: auto;
+  box-shadow: rgba($color-peach, 0.4) 5px 5px, rgba($color-peach, 0.3) 10px 10px, rgba($color-peach, 0.2) 15px 15px, rgba($color-peach, 0.1) 20px 20px, rgba($color-peach, 0.05) 25px 25px;
+  border-radius: 10px;
+  display: block;
+}
+
+.author-page__image {
+  margin-bottom: 30px;
+}
+
+
+.author-page__bio {
+  color: $color-nobel;
+  font-size: 1.375rem;
+  margin-top: 0;
+}
+
+.author-page__website {
+  margin-top: 0;
+  order: 1;
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet) {
+  .author-page__author {
+    // grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "title image"
+      "bio image"
+      "social image"
+      "website image";
+    padding-top: 50px;
+    padding-bottom: 30px;
+    column-gap: 30px;
+    justify-content: space-between;
+    grid-template-rows: repeat(3, min-content) 1fr;
+  }
+
+  .author-page__title {
+    grid-area: title;
+  }
+
+  .author-page__bio {
+    grid-area: bio;
+  }
+
+  .author-page__socials {
+    grid-area: social;
+  }
+
+  .author-page__website {
+    grid-area: website;
+    align-self: flex-start;
+    font-size: 1.375rem;
+  }
+
+  .author-page__image {
+    grid-area: image;
+    align-self: center;
+  }
+}
+
+@media (min-width: $desktop) {
+  .author-page__socials {
+          .social__link {
+              width: 60px;
+              height: 60px;
+            }
+
+            .social__link__icon {
+              width: 30px;
+              height: 30px;
+            }
+    }
+}
