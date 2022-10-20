@@ -1,4 +1,7 @@
-.author-page {}
+.author-page__posted {
+  display: grid;
+  grid-template-columns: minmax(20px, auto) minmax(auto, calc($desktop - 40px)) minmax(20px, auto);
+}
 
 .author-page__author {
   display: grid;
@@ -42,6 +45,14 @@
   margin-bottom: 30px;
 }
 
+@media (min-width: 480px) {
+  .author-page__posted {
+    background-image:
+      linear-gradient(to bottom, transparent 0, transparent 500px, white 500px),
+      linear-gradient(to right, $color-seashell 0%, $color-seashell 55%, transparent 55%);
+  }
+}
+
 @media (min-width: $tablet) {
   .author-page__author {
     // grid-template-columns: repeat(2, 1fr);
@@ -83,14 +94,14 @@
 
 @media (min-width: $desktop) {
   .author-page__socials {
-          .social__link {
-              width: 60px;
-              height: 60px;
-            }
-
-            .social__link__icon {
-              width: 30px;
-              height: 30px;
-            }
+    .social__link {
+      width: 50px;
+      height: 50px;
     }
+
+    .social__link__icon {
+      width: 25px;
+      height: 25px;
+    }
+  }
 }
