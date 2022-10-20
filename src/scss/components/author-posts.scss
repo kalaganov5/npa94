@@ -9,3 +9,12 @@ ul.author-posts__list {
 .author-posts__list {
   grid-column: 2/3;
 }
+
+.author-posts__headline {
+  font-size: 2rem;
+  grid-column: 2/3;
+
+  &--contrast {
+    color: $color-peach;
+  }
+}
