@@ -1,0 +1,38 @@
+.pagination {
+  & .page-numbers {
+    @include reset-list;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 20px 25px;
+  }
+
+  & li .page-numbers {
+    display: block;
+    min-height: 55px;
+    min-width: 55px;
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    background-color: $color-nobel;
+    color: $color-white;
+    border-radius: 10px;
+    box-shadow: 14px 14px 36px rgba(85, 85, 85, 0.1);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 27px;
+    @include transition;
+
+    &:hover {
+      background-color: rgba($color-peach, 0.7);
+      color: $color-black;
+    }
+
+    &.current {
+      background: $color-peach;
+      border-radius: 10px;
+      color: $color-black;
+    }
+  }
+}
