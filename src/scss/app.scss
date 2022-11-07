@@ -1,5 +1,5 @@
 
-
+@import 'html.scss';
 /* Fonts */
 @import 'base/fonts';
 
@@ -41,6 +41,14 @@
 @import './components/npa94-form.scss';
 @import './form-global.scss';
 @import './components/wpcf7.scss';
+@import './components/author-page.scss';
+@import './components/author-posts.scss';
+@import './components/posts-preview.scss';
+@import './components/pagination.scss';
+@import './components/page-blog.scss';
+@import './components/pinned-slider.scss';
+@import './components/blog-meta.scss';
+@import './components/blog-author.scss';
 
 /* Browser specific styles */
 @import 'dirty/hacks';

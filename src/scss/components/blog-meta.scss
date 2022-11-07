@@ -1,0 +1,27 @@
+.blog-meta {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .blog-meta {
+    display: flex;
+    @include reset-list;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+    color: var(--color-text-gray-400);
+  }
+
+  .blog-meta__link {
+    &.button {
+      box-shadow: none;
+      background-color: var(--color-background-brand-1);
+      color: var(--color-text-black-blanker);
+      &:hover,
+      &:focus {
+        background-color: var(--color-text-gray-900);
+        color: var(--color-text-white);
+      }
+    }
+  }
+}

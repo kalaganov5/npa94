@@ -1,0 +1,20 @@
+ul.author-posts__list {
+  margin-bottom: 50px;
+}
+
+.author-posts {
+  padding-top: 10px;
+}
+
+.author-posts__list {
+  grid-column: 2/3;
+}
+
+.author-posts__headline {
+  font-size: 2rem;
+  grid-column: 2/3;
+
+  &--contrast {
+    color: $color-peach;
+  }
+}

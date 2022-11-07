@@ -1,0 +1,44 @@
+:root {
+  // TEXT
+  // headline sizes
+  // calc with https: //xgkft.csb.app/
+  --headline-h1: clamp(2.25rem, 1.8645rem + 1.9277vw, 3.25rem);
+  --title-l: clamp(3.25rem, 8vw, 6.25rem);
+  --title-m: clamp(2.25rem, 4vw, 2.5rem);
+  --title-s: clamp(1.75rem, 4vw, 2rem);
+
+  // text sizes
+  --text-s: 1rem;
+  --text-m: 1.125rem;
+  --text-l: 1.5rem;
+  --text-xl: clamp(1.55rem, 3vw, 1.75rem);
+
+  // COLOR
+  // BG
+  --color-background-brand-4: #fff5ef;
+  --color-background-brand-1: #ffcda3;
+  // TEXT
+  --color-text-gray-100: #999;
+  --color-text-gray-400: #9a9a9a;
+  --color-text-gray-900: #101010;
+  --color-text-black: #000;
+  --color-text-white: #fff;
+  --color-text-black-blanker: #222831;
+
+  // color additional
+  --color-light-grey: #d8d7d7;
+
+  // gap
+  --gap-base: 20px;
+
+  // WIDTH
+  --width-container: 1110px;
+
+  // swiper
+  --swiper-pagination-bullet-height: 10px;
+  --swiper-pagination-bullet-width: 10px;
+}
+
+html {
+  height: 100%;
+}

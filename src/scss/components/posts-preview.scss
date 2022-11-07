@@ -1,0 +1,123 @@
+.posts-preview {
+  @include reset-list;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+
+
+  &__item {
+    border-radius: 10px;
+    box-shadow: 30px 30px 64px rgba(0, 0, 0, 0.05);
+  }
+
+  &__box {
+    height: 100%;
+    display: block;
+    text-decoration-color: transparent;
+    position: relative;
+
+    .posts-preview__headline {
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      @include transition;
+      word-break: break-word;
+    }
+
+    &:hover,
+    &:focus,
+    &:focus-within {
+      .posts-preview__headline {
+        text-decoration-color: currentColor;
+      }
+    }
+  }
+
+  &__image {
+    // https: //ontopmarketing.agency/css-aspect-ratio-calculator/
+    padding: 0 0 56.25% 0;
+    position: relative;
+  }
+
+  &__image-body {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+  }
+}
+
+.posts-preview__content {
+  background-color: $color-white;
+  padding: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.posts-preview__category {
+  font-size: 1rem;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: block;
+  padding: 10px;
+  background-color: $color-dark-cyan;
+  border-radius: 10px;
+  color: $color-white;
+  box-shadow: 14px 14px 36px rgba(85, 85, 85, 0.1);
+  font-weight: 600;
+}
+
+.posts-preview__date {
+  font-size: 1rem;
+  color: $color-nobel;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 7px;
+
+  &::before {
+    content: '';
+    width: 0.344rem;
+    height: 0.344rem;
+    border-radius: 50%;
+    background-color: currentColor;
+  }
+}
+
+.posts-preview__headline {
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: $base-black;
+
+}
+
+.posts-preview__pagination {
+  grid-column: 2/3;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 480px) {
+  .posts-preview {
+    &__item {
+
+      &:nth-child(n+4) {
+        flex: 1 1 calc(50% - (30px / 2));
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .posts-preview__item {
+    flex: 1 1 calc(50% - (30px / 2));
+
+    &:nth-child(n+5) {
+      flex: 1 1 calc(33.333% - (30px * 2));
+      max-width: 500px;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.page-blog {
+  .rank-math-breadcrumb {
+    & a {
+      &:last-of-type {
+        color: currentColor;
+        background-color: unset;
+        border-radius: unset;
+        padding: unset;
+        box-shadow: none;
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        @include transition;
+
+        &:hover,
+        &:active,
+        &:focus {
+          text-decoration-color: currentColor;
+        }
+      }
+    }
+  }
+}
+
+.page-blog__header {
+  background-color: var(--color-background-brand-4);
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.page-blog__headline {
+  margin-top: 0;
+}
+
+@media (min-width: $tablet) {
+  .page-blog__header-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: var(--gap-base);
+  }
+
+  .page-blog__description {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .page-blog__headline {
+    grid-column: 1/-1;
+  }
+
+  .page-blog .rank-math-breadcrumb {
+    justify-self: end;
+  }
+}

@@ -34,6 +34,10 @@
         &.social__link--twitter {
           background-color: $social-twitter;
         }
+
+        &.social__link--pinterest {
+          background-color: $social-pinterest;
+        }
       }
     }
   }
@@ -48,6 +52,12 @@
   border-radius: 100%;
   fill: $color-white;
   @include transition;
+  background-color: $base-black;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
 
   &--instagram {
     background: $social-instagram;
@@ -71,6 +81,10 @@
 
   &--vk {
     background-color: $social-vk;
+  }
+
+  &--pinterest {
+    background-color: $social-pinterest;
   }
 }
 
