@@ -11,4 +11,8 @@ navigation.init();
 const form = new ContactForm7Handler('.wpcf7');
 form.init();
 
-sliderBlog();
+// try swiper
+try {
+  sliderBlog();
+}
+catch (e) { /* console.log("no swiper") */ }
