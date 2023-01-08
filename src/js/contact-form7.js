@@ -13,8 +13,8 @@ export class ContactForm7Handler {
   }
 
   init = () => {
-    if (typeof (wpcf7) === 'object') {
-      this.#form = document.querySelector(this.#formSelector);
+    this.#form = document.querySelector(this.#formSelector);
+    if (this.#form !== null) {
       this.setHandler();
     } else {
       throw Error ('Contact Form 7 not founded');
