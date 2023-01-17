@@ -38,6 +38,10 @@
         &.social__link--pinterest {
           background-color: $social-pinterest;
         }
+
+        &.social__link--kwork {
+          background-color: $social-kwork;
+        }
       }
     }
   }
@@ -85,6 +89,10 @@
 
   &--pinterest {
     background-color: $social-pinterest;
+  }
+
+  &--kwork {
+    background-color: $social-kwork;
   }
 }
 
