@@ -8,7 +8,6 @@
   }
 
   & li .page-numbers {
-    display: block;
     min-height: 55px;
     min-width: 55px;
     display: flex;
@@ -30,7 +29,7 @@
     }
 
     &.current {
-      background: $color-peach;
+      background: var(--brand-color-1, $color-peach);
       border-radius: 10px;
       color: $color-black;
     }

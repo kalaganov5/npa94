@@ -1,7 +1,6 @@
 /**
  * Variables
 */
-
 /* Typography */
 /* Breakpoints */
 $desktop: 1150px;
@@ -16,7 +15,7 @@ $white: #fff;
 $light-gray: #f1f1f1;
 $base-black: #101010;
 
-$color-seashell: #FFF5EF;
+
 $color-banker: #222831;
 $color-black: #000000;
 $color-nero: #212121;
@@ -24,8 +23,15 @@ $color-white: #ffffff;
 $color-dark-gray: #484848;
 $color-matterhorn-light: rgba(85, 85, 85, 0.1);
 $color-nobel: #9A9A9A;
+
+// --brand-color-1
 $color-peach: #FFCDA3;
+
+// --brand-color-2
 $color-serenade: #FCE2CE;
+
+// --brand-color-4
+$color-seashell: #fff5ef;
 $color-gainsboro: #E0E0E0;
 $color-white-smoke: #F3F3F3;
 $color-red: #EF4F4F;
@@ -34,7 +40,6 @@ $color-dark-cyan: #008891;
 $body-background-color: #333;
 $foreground-color: #fff;
 $caption-color: #464646;
-$accent-color: #999;
 $link-color: #ec1f4e;
 
 $color__text-screen: #21759b;
@@ -51,5 +56,6 @@ $social-vk: #0077FF;
 $social-whatsapp: #3AC371;
 $social-facebook: #4E6297;
 $social-twitter: #1DA1F2;
-$social-pinterest: #c00;
+$social-pinterest: #C00;
+$social-kwork: #FFA800;
 /* Components */

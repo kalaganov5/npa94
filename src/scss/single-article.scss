@@ -5,7 +5,7 @@
 .single-article__header {
   padding-top: 50px;
   margin-bottom: 40px;
-  background-color: $color-seashell;
+  background-color: var(--brand-color-4, $color-seashell);
 }
 
 .single-article__meta {
@@ -38,7 +38,6 @@
   }
 
   & > .wp-block-embed {
-    overflow: overlay;
   }
 
   & > .wp-block-image {
@@ -118,7 +117,7 @@
 }
 
 .wp-block-pullquote {
-  background-color: $color-seashell;
+  background-color: var(--brand-color-4, $color-seashell);
   border-radius: 10px;
   padding: 30px;
   max-width: min(calc(100% - 20px), $width-small);
@@ -192,7 +191,7 @@ div.jetpack-testimonial-shortcode {
 
   & .testimonial-entry {
     border: 1px solid $color-serenade;
-    background-color: $color-seashell;
+    background-color: var(--brand-color-4, $color-seashell);
     border-radius: 10px;
     padding: 30px 20px 30px 50px;
     position: relative;
