@@ -46,9 +46,8 @@
 
 @media (min-width: 480px) {
   .author-page__posted {
-    background-image:
-      linear-gradient(to bottom, transparent 0, transparent 500px, white 500px),
-      linear-gradient(to right, $color-seashell 0%, $color-seashell 55%, transparent 55%);
+    background-image: linear-gradient(to bottom, transparent 0, transparent 500px, white 500px),
+    linear-gradient(to right, var(--brand-color-4, $color-seashell) 0%, var(--brand-color-4, $color-seashell) 55%, transparent 55%);
   }
 }
 

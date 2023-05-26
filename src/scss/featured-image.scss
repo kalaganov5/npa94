@@ -1,5 +1,5 @@
 .featured-image {
-  background: linear-gradient(to bottom, $color-seashell 50%, $color-white 50%, $color-white 100%);
+  background: linear-gradient(to bottom, var(--brand-color-4, $color-seashell) 50%, $color-white 50%, $color-white 100%);
 }
 
 .featured-image__body {

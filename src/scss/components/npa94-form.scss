@@ -41,7 +41,6 @@
       border-radius: 10px;
       background-color: $color-white-smoke;
       min-height: 50px;
-      border: 0;
       padding: 20px;
       outline: none;
       border: 1px solid transparent;
@@ -79,7 +78,6 @@
     background-color: $color-banker;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 14px 14px 36px rgba(85, 85, 85, 0.1);
     @include transition;
     word-break: break-word;
     cursor: pointer;
@@ -138,7 +136,7 @@
   .npa94-form {
     grid-template-columns: minmax(20px, auto) minmax(auto, calc($width-small / 2)) minmax(auto, calc($width-small / 2)) minmax(20px, auto);
     column-gap: 50px;
-    background-image: linear-gradient(to right, $color-seashell 0 calc(50% - 10px), transparent calc(50% - 10px));
+    background-image: linear-gradient(to right, var(--brand-color-4, $color-seashell) 0 calc(50% - 10px), transparent calc(50% - 10px));
 
     & > .wpcf7 {
       grid-column: 3/4;

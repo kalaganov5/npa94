@@ -21,7 +21,7 @@
     &:last-of-type {
       text-decoration: none;
       color: $color-banker;
-      background-color: $color-peach;
+      background-color: var(--brand-color-1, $color-peach);
       border-radius: 10px;
       padding: 12px 20px;
       display: inline-block;

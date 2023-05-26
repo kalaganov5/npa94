@@ -30,7 +30,7 @@
 }
 
 .pinned-slider__image {
-  padding: 0px 0px 56.25% 0px;
+  padding: 0 0 56.25%;
   position: relative;
   width: 100%;
 }
@@ -96,13 +96,10 @@
     grid-template-columns: minmax(var(--gap-base), auto) min-content minmax(1110px, 1300px) min-content minmax(var(--gap-base), auto);
     position: absolute;
     z-index: 1;
-    width: auto;
     height: 0;
     top: 50%;
     width: 100%;
     max-width: 100%;
-    // align-items: center;
-    // justify-content: space-between;
   }
 
   .pinned-slider__control {
@@ -111,14 +108,7 @@
     padding: 0;
     border: 0;
     line-height: 0;
-    // position: absolute;
-    // top: 50px;
-    // height: calc(100% - 50px - 40px);
-    // left: 10px;
-    // margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
-    // z-index: 10;
     cursor: pointer;
-    // color: var(--swiper-navigation-color, var(--swiper-theme-color));
 
     &--prev {
       grid-column: 2/3;
@@ -138,7 +128,7 @@
     }
 
     &:disabled .pinned-slider__control-icon {
-      opacity: 0.1;
+      opacity: 0.3;
       cursor: not-allowed;
     }
   }
@@ -146,7 +136,7 @@
   .pinned-slider__control-icon {
     fill: none;
     stroke: var(--color-text-black);
-    opacity: 0.1;
+    opacity: 0.3;
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
     border-radius: 100%;
     @include transition(200ms, opacity);

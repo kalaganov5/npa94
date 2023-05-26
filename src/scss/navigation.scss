@@ -5,7 +5,7 @@
   left: 0;
   top: calc(100% + 1px); // border in header
   width: 100%;
-  background-color: $color-seashell;
+  background-color: var(--brand-color-4, $color-seashell);
   padding: 30px 20px;
   @include transition;
   display: flex;

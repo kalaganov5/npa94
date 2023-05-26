@@ -15,6 +15,6 @@ ul.author-posts__list {
   grid-column: 2/3;
 
   &--contrast {
-    color: $color-peach;
+    color: var(--brand-color-1, $color-peach);
   }
 }

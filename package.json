@@ -72,7 +72,7 @@
   },
   "target": "web",
   "dependencies": {
-    "sweetalert2": "^11.5.1",
+    "sweetalert2": "11.6.13",
     "swiper": "^8.4.4"
   }
 }

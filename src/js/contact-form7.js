@@ -16,8 +16,6 @@ export class ContactForm7Handler {
     this.#form = document.querySelector(this.#formSelector);
     if (this.#form !== null) {
       this.setHandler();
-    } else {
-      throw Error ('Contact Form 7 not founded');
     }
   };
 
