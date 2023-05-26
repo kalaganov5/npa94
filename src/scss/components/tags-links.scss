@@ -14,7 +14,7 @@
     text-decoration: none;
     font-weight: 600;
     color: $color-banker;
-    background-color: $color-seashell;
+    background-color: var(--brand-color-4, $color-seashell);
     border-radius: 10px;
     border: 1px solid $color-serenade;
     padding: 12px 20px;
@@ -32,7 +32,7 @@
 
     &:hover,
     &:active {
-      background-color: $color-peach;
+      background-color: var(--brand-color-1, $color-peach);
       color: inherit;
     }
   }

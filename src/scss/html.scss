@@ -15,10 +15,8 @@
 
   // COLOR
   // BG
-  --color-background-brand-4: #fff5ef;
-  --color-background-brand-1: #ffcda3;
+  --color-background-brand-1: var(--brand-color-1, $color-peach);
   // TEXT
-  --color-text-gray-100: #999;
   --color-text-gray-400: #9a9a9a;
   --color-text-gray-900: #101010;
   --color-text-black: #000;

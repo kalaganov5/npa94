@@ -1,5 +1,5 @@
 .header {
-  background-color: $color-seashell;
+  background-color: var(--brand-color-4, $color-seashell);
   border-bottom: 1px solid rgba($color-black, 0.08);
   position: relative;
 }

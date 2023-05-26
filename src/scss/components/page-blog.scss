@@ -22,7 +22,7 @@
 }
 
 .page-blog__header {
-  background-color: var(--color-background-brand-4);
+  background-color: var(--brand-color-4, $color-seashell);
   padding-top: 60px;
   padding-bottom: 50px;
 }
