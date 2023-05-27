@@ -72,7 +72,7 @@
   },
   "target": "web",
   "dependencies": {
-    "sweetalert2": "11.6.13",
+    "notiflix": "^3.2.6",
     "swiper": "^8.4.4"
   }
 }

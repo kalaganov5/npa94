@@ -1,14 +1,15 @@
-import Swal from 'sweetalert2';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 export class ContactForm7Handler {
   #formSelector = null;
   #form = null;
+
   /**
    * Creates an instance of ContactForm7Handler.
    * @param {string} formSelector html selector form
    * @memberof ContactForm7Handler
    */
-  constructor(formSelector) {
+  constructor (formSelector) {
     this.#formSelector = formSelector;
   }
 
@@ -24,12 +25,11 @@ export class ContactForm7Handler {
   };
 
   formSubmitSuccess = function () {
-    Swal.fire({
-      title: 'Сообщение успешно отправлено!',
-      showCloseButton: true,
-      icon: 'success',
-      timer: 10000,
-      confirmButtonText: 'Отлично',
-    });
+    Notify.success(
+      'Сообщение успешно отправлено!',
+      {
+        timeout: 5000,
+      },
+    );
   };
 }
