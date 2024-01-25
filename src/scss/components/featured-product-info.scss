@@ -1,0 +1,136 @@
+.featured-product-info {
+
+}
+
+.featured-product-info__slider {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.featured-product-info__specifications {
+  border: 1px solid var(--brand-color-1, $color-peach);
+  border-radius: 20px;
+  background-color: var(--brand-color-4, $color-seashell);
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+
+  tbody {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  th {
+    text-align: left;
+    padding: 0;
+  }
+
+  td {
+    padding: 0;
+
+    p:first-child {
+      margin-top: 0;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a:not(.button) {
+    color: inherit;
+    text-decoration-color: rgba($color-banker, 0.3);
+    @include transition();
+
+    &:hover {
+      color: $link-color;
+      text-decoration-color: $link-color;
+    }
+  }
+}
+
+.featured-product-info__container {
+  display: grid;
+  gap: 20px;
+}
+
+.featured-product-info__button {
+  align-self: center;
+  box-shadow: 14px 14px 36px rgba(85, 85, 85, 0.1);
+  position: relative;
+  z-index: 0;
+
+  @keyframes glowing {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+  &:before {
+    content: '';
+    background: linear-gradient(to right, var(--brand-color-1, $color-peach), $color-red);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: inherit;
+  }
+
+  &:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+  &:before {
+    opacity: 1;
+  }
+}
+
+.featured-product-info__additional {
+  align-self: center;
+}
+
+.featured-product-info__title {
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+@media (min-width: $tablet) {
+  .featured-product-info__container {
+    grid-template-columns: 1fr 300px;
+    align-items: start;
+  }
+
+  .featured-product-info__specifications {
+    overflow-y: scroll;
+    height: 200px;
+  }
+}

@@ -8,3 +8,11 @@
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 100%;
 }
+
+html,
+body {
+  scrollbar-gutter: stable;
+
+  overflow: initial;
+  height: initial;
+}

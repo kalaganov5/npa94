@@ -1,0 +1,54 @@
+.download-app {
+  color: $color-dark-gray;
+}
+
+.download-app__headline {
+  font-size: 20px;
+}
+
+.download-app__wait {
+  font-size: 18px;
+  font-weight: 700;
+
+  span {
+    color: $color-red;
+  }
+}
+
+.download-app__links {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+  @include transition(filter);
+
+  &--disabled {
+    filter: grayscale(100%);
+  }
+
+  a {
+    font-size: 18px;
+    color: $color__link;
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+  }
+}
+
+.download-app__icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.download-app__more-link {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  font-size: 14px;
+
+  a {
+    color: $color-dark-gray;
+
+  }
+}

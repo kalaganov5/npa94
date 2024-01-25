@@ -40,6 +40,7 @@
   box-shadow: 14px 14px 36px rgba(85, 85, 85, 0.1);
   @include transition;
   word-break: break-word;
+  cursor: pointer;
 
   &:hover,
   &:active {
