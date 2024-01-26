@@ -46,9 +46,9 @@
   background: transparent;
   border: 0;
   cursor: pointer;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:before {
     content: "\2715";
@@ -63,6 +63,10 @@
 .modal__content {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.modal__ads {
+  max-height: 400px;
 }
 
 .modal__btn {

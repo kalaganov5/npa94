@@ -10,6 +10,19 @@
   left: 0;
   bottom: 0;
   right: 0;
+
+  .swiper-pagination-bullet {
+    background-color: white;
+    opacity: 0.5;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 0.8;
+  }
+}
+
+.sp-slider__slide {
+  @include adaptive-image(780, 440);
 }
 
 .sp-slider__image {
@@ -36,6 +49,7 @@
     height: 100%;
 
     @include transition();
+
     &:hover,
     &:focus {
       background-color: rgba(0, 0, 0, 0.30);
