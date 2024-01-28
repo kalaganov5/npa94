@@ -46,7 +46,9 @@ export default class CountdownLinkDownload {
   }
 
   #linksActivator () {
-    const linkList = document.querySelector('#timer_download_links');
-    linkList.classList.remove('download-app__links--disabled');
+    const linkList = document.querySelectorAll('ul.download-app__links');
+    linkList.forEach((item) => {
+      item.classList.remove('download-app__links--disabled');
+    });
   }
 };

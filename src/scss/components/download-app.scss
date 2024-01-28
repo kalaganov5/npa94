@@ -19,7 +19,7 @@
   }
 }
 
-.download-app__links {
+ul.download-app__links {
   @include reset-list;
   display: flex;
   flex-direction: column;
@@ -28,6 +28,10 @@
 
   &--disabled {
     filter: grayscale(100%);
+
+    a {
+      cursor: wait;
+    }
   }
 
   a {
@@ -36,6 +40,10 @@
     display: flex;
     align-items: center;
     gap: 0.7em;
+  }
+
+  li {
+    list-style: none;
   }
 }
 

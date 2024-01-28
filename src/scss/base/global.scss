@@ -18,6 +18,10 @@
   display: none;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 .container {
   margin: 0 auto;
   padding-left: 20px;

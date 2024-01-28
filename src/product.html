@@ -317,56 +317,154 @@
               <p class="download-app__wait" id="timer_block">
                 Пожалуйста, подождите&nbsp;<span id="timer_countdown"></span>.
               </p>
-              <ul class="download-app__links download-app__links--disabled" id="timer_download_links">
-                <li>
-                  <a href="#">
-                    <img class="download-app__icon"
-                         src="https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://vvemnn.ru/&size=64"
-                         alt="" width="16" height="16">
-                    Скачать на&nbsp;официальном сайте
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img class="download-app__icon"
-                         src="./images/content/icon-yandex-disk.svg"
-                         alt="" width="16" height="16">
-                    Скачать с&nbsp;Яндекс Диск
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img class="download-app__icon"
-                         src="./images/content/icon-cloud-mail.svg"
-                         alt="" width="16" height="16">
-                    Скачать с&nbsp;Облако Mail.ru
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img class="download-app__icon"
-                         src="./images/content/icon-google-drive.svg"
-                         alt="" width="16" height="16">
-                    Скачать с&nbsp;Google Drive
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img class="download-app__icon"
-                         src="./images/content/icon-torrent-magnet.svg"
-                         alt="" width="16" height="16">
-                    Скачать Torrent magnet-ссылка
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img class="download-app__icon"
-                         src="./images/content/icon-torrent.svg"
-                         alt="" width="16" height="16">
-                    Скачать Torrent файл
-                  </a>
-                </li>
-              </ul>
+              <div class="download-app__tabs tabs"><input type="radio" name="tabs_download" id="tab_macos"
+                                                          data-key-name="Mac OS">
+                <label for="tab_macos">Mac OS</label>
+                <div class="tab">
+                  <ul class="download-app__links">
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://localhost:3000/&amp;size=64"
+                                                              alt="Official Website" width="16" height="16">Official
+                      Website</a></li>
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://localhost:3000/&amp;size=64"
+                                                              alt="AppStore" width="16" height="16">AppStore</a></li>
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="http://localhost:8000/wp-content/themes/npa94/assets/images/content/icon-google-drive.svg"
+                                                              alt="Google Drive" width="16" height="16">Google Drive</a>
+                    </li>
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="http://localhost:8000/wp-content/themes/npa94/assets/images/content/icon-yandex-disk.svg"
+                                                              alt="Yandex Cloud" width="16" height="16">Yandex Cloud</a>
+                    </li>
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="http://localhost:8000/wp-content/themes/npa94/assets/images/content/icon-cloud-mail.svg"
+                                                              alt="Облако Mail.ru" width="16" height="16">Облако Mail.ru</a>
+                    </li>
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="http://localhost:8000/wp-content/themes/npa94/assets/images/content/icon-torrent-magnet.svg"
+                                                              alt="Torrent Magnet-ссылка" width="16" height="16">Torrent
+                      Magnet-ссылка</a></li>
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="http://localhost:8000/wp-content/themes/npa94/assets/images/content/icon-torrent.svg"
+                                                              alt="Google Drive" width="16" height="16">Google Drive</a>
+                    </li>
+                  </ul>
+                </div>
+                <input type="radio" name="tabs_download" id="tab_windows" data-key-name="Windows">
+                <label for="tab_windows">Windows</label>
+                <div class="tab">
+                  <ul class="download-app__links">
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://localhost:3000/&amp;size=64"
+                                                              alt="Official Website" width="16" height="16">Official
+                      Website</a></li>
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="http://localhost:8000/wp-content/themes/npa94/assets/images/content/icon-google-drive.svg"
+                                                              alt="Google Drive" width="16" height="16">Google Drive</a>
+                    </li>
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="http://localhost:8000/wp-content/themes/npa94/assets/images/content/icon-yandex-disk.svg"
+                                                              alt="Yandex Cloud" width="16" height="16">Yandex Cloud</a>
+                    </li>
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="http://localhost:8000/wp-content/themes/npa94/assets/images/content/icon-cloud-mail.svg"
+                                                              alt="Облако Mail.ru" width="16" height="16">Облако Mail.ru</a>
+                    </li>
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="http://localhost:8000/wp-content/themes/npa94/assets/images/content/icon-torrent-magnet.svg"
+                                                              alt="Torrent Magnet-ссылка" width="16" height="16">Torrent
+                      Magnet-ссылка</a></li>
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="http://localhost:8000/wp-content/themes/npa94/assets/images/content/icon-torrent.svg"
+                                                              alt="Torrent файл" width="16" height="16">Torrent файл</a>
+                    </li>
+                  </ul>
+                </div>
+                <input type="radio" name="tabs_download" id="tab_android" data-key-name="Android">
+                <label for="tab_android">Android</label>
+                <div class="tab">
+                  <ul class="download-app__links">
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://localhost:3000/&amp;size=64"
+                                                              alt="Official Website" width="16" height="16">Official
+                      Website</a></li>
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="http://localhost:8000/wp-content/themes/npa94/assets/images/content/icon-google-drive.svg"
+                                                              alt="Google Drive" width="16" height="16">Google Drive</a>
+                    </li>
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="http://localhost:8000/wp-content/themes/npa94/assets/images/content/icon-yandex-disk.svg"
+                                                              alt="Yandex Cloud" width="16" height="16">Yandex Cloud</a>
+                    </li>
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="http://localhost:8000/wp-content/themes/npa94/assets/images/content/icon-cloud-mail.svg"
+                                                              alt="Облако Mail.ru" width="16" height="16">Облако Mail.ru</a>
+                    </li>
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="http://localhost:8000/wp-content/themes/npa94/assets/images/content/icon-torrent-magnet.svg"
+                                                              alt="Torrent Magnet-ссылка" width="16" height="16">Torrent
+                      Magnet-ссылка</a></li>
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="http://localhost:8000/wp-content/themes/npa94/assets/images/content/icon-torrent.svg"
+                                                              alt="Torrent файл" width="16" height="16">Torrent файл</a>
+                    </li>
+                  </ul>
+                </div>
+                <input type="radio" name="tabs_download" id="tab_androidtv" data-key-name="Android TV">
+                <label for="tab_androidtv">Android TV</label>
+                <div class="tab">
+                  <ul class="download-app__links">
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://localhost:3000/&amp;size=64"
+                                                              alt="Official Website" width="16" height="16">Official
+                      Website</a></li>
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="http://localhost:8000/wp-content/themes/npa94/assets/images/content/icon-google-drive.svg"
+                                                              alt="Google Drive" width="16" height="16">Google Drive</a>
+                    </li>
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="http://localhost:8000/wp-content/themes/npa94/assets/images/content/icon-yandex-disk.svg"
+                                                              alt="Yandex Cloud" width="16" height="16">Yandex Cloud</a>
+                    </li>
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="http://localhost:8000/wp-content/themes/npa94/assets/images/content/icon-cloud-mail.svg"
+                                                              alt="Облако Mail.ru" width="16" height="16">Облако Mail.ru</a>
+                    </li>
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="http://localhost:8000/wp-content/themes/npa94/assets/images/content/icon-torrent-magnet.svg"
+                                                              alt="Torrent Magnet-ссылка" width="16" height="16">Torrent
+                      Magnet-ссылка</a></li>
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="http://localhost:8000/wp-content/themes/npa94/assets/images/content/icon-torrent.svg"
+                                                              alt="Torrent файл" width="16" height="16">Torrent файл</a>
+                    </li>
+                  </ul>
+                </div>
+                <input type="radio" name="tabs_download" id="tab_ios" data-key-name="iOS">
+                <label for="tab_ios">iOS</label>
+                <div class="tab">
+                  <ul class="download-app__links">
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://localhost:3000/&amp;size=64"
+                                                              alt="Official Website" width="16" height="16">Official
+                      Website</a></li>
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://localhost:3000/&amp;size=64"
+                                                              alt="AppStore" width="16" height="16">AppStore</a></li>
+                  </ul>
+                </div>
+                <input type="radio" name="tabs_download" id="tab_browserextension" data-key-name="Browser Extension">
+                <label for="tab_browserextension">Browser Extension</label>
+                <div class="tab">
+                  <ul class="download-app__links">
+                    <li><a href="http://localhost:3000/"><img class="download-app__icon"
+                                                              src="https://t3.gstatic.com/faviconV2?client=SOCIAL&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL&amp;url=http://localhost:3000/&amp;size=64"
+                                                              alt="Official Website" width="16" height="16">Official
+                      Website</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </main>
           <footer>
@@ -615,7 +713,6 @@
     </div>
   </div>
 </footer>
-
 </body>
 
 </html>

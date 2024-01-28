@@ -6,13 +6,15 @@ import { ContactForm7Handler } from './contact-form7.js';
 import { sliderBlog } from './slider-blog.js';
 import { sliderProduct } from './slider-product';
 import { fixProductHeight } from './fix-product-height';
-import {productDownloadModal} from './product-download-modal';
-
+import { productDownloadModal } from './product-download-modal';
+import './tabs-download';
 // MicroModal.show('modal-1'); // [1]
 const navigation = new Navigation();
 navigation.init();
 
 productDownloadModal();
+
+// new TabsDownload().init();
 
 const form = new ContactForm7Handler('.wpcf7');
 form.init();
